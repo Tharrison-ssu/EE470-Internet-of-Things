@@ -159,3 +159,12 @@ ORDER BY node_name, time_received;
 SELECT * FROM sensor_combined
 ORDER BY node_name, time_received;
 
+-- Temperature must be between -10 and 100 Celsius
+ALTER TABLE sensor_data
+ADD CONSTRAINT check_temperature
+CHECK (temperature BETWEEN -10 AND 100);
+
+-- Humidity must be between 0 and 100 percent
+ALTER TABLE sensor_data
+ADD CONSTRAINT check_humidity
+CHECK (humidity BETWEEN 0 AND 100);
