@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Internet of Things - EE 470</title>
+
+    <style>
+        /* Main page */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f5f7;
+            color: #222;
+        }
+
+        /* Top header */
+        header {
+            background-color: #10776f;
+            color: white;
+            padding: 30px;
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+        }
+
+        header p {
+            margin: 5px 0;
+        }
+
+        /* Main content */
+        main {
+            max-width: 850px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Content boxes */
+        .assignment {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+        }
+
+        .assignment h2 {
+            color: #10776f;
+            margin-top: 0;
+        }
+
+        .assignment li {
+            margin: 10px 0;
+        }
+
+        /* Work in progress section */
+        .work-in-progress {
+            background-color: #f1f4f7;
+            border-left: 5px solid #10776f;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 25px;
+        }
+
+        .work-in-progress h3 {
+            color: #10776f;
+            margin-top: 0;
+        }
+
+        /* Submitted checkmark */
+        .submitted {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Links */
+        a {
+            color: #007e87;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Website header -->
+    <header>
+        <h1>Internet of Things (IoT)</h1>
+        <h2>EE 470 - Student Projects</h2>
+        <p>Student: Taine Harrison</p>
+        <p>Sonoma State University</p>
+    </header>
+
+    <main>
+
+        <!-- Welcome section -->
+        <section class="assignment">
+            <h2>Welcome</h2>
+
+            <p>
+                Welcome to my Internet of Things project website.
+                This page contains my coursework and projects
+                for EE 470.
+            </p>
+        </section>
+
+        <!-- Database assignment -->
+        <section class="assignment">
+            <h2>Database Assignment</h2>
+
+            <p>
+                Creating a MySQL database to store sensor
+                information, including temperature, humidity,
+                and sensor locations.
+            </p>
+
+            <ul>
+                <!-- GitHub SQL code -->
+                <li>
+                    GitHub SQL Code:
+                    <a href="https://github.com/Tharrison-ssu/EE470-Internet-of-Things/blob/main/EE470_Database_Assignment/database.sql"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        View SQL Code on GitHub
+                    </a>
+                </li>
+
+                <!-- Database report status -->
+                <li>
+                    Database Report:
+                    <span class="submitted">
+                        Submitted &#10003;
+                    </span>
+                </li>
+            </ul>
+
+            <!-- Database work in progress -->
+            <div class="work-in-progress">
+                <h3>Database Assignment Work in Progress</h3>
+
+                <p>
+                    The following links show the current database
+                    assignment features:
+                </p>
+
+                <ul>
+                    <li>
+                        <a href="database.php" target="_blank">
+                            View Sensor Database Tables
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="plot.php" target="_blank">
+                            View Sensor Temperature Graph
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="encoded_insert.php" target="_blank">
+                            View Base64 Encoded Insert Endpoint
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="insert.php" target="_blank">
+                            View Sensor Data Insert Endpoint
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Website footer -->
+    <footer>
+        <p>EE 470 - Internet of Things</p>
+        <p>Taine Harrison | Sonoma State University</p>
+    </footer>
+
+</body>
+</html>
